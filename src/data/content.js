@@ -17,7 +17,7 @@ export const profile = {
 }
 
 export const stats = [
-  { value: '5+', label: 'Years in physiotherapy training & practice' },
+  { value: '1.5', label: 'Years of hands-on experience' },
   { value: '3', label: 'Clinical & wellness settings' },
   { value: 'BPT', label: 'Bachelor of Physiotherapy' },
   { value: 'MS', label: 'Kinesiology, 2026' },
