@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+
+  --color-ink-50: #f4f7f6;
+  --color-ink-100: #e3ebe9;
+  --color-ink-300: #9db3ae;
+  --color-ink-500: #4d6b65;
+  --color-ink-700: #234a44;
+  --color-ink-900: #0b2d29;
+  --color-ink-950: #062925;
+
+  --color-sage-200: #cde7dc;
+  --color-sage-400: #7cc4a8;
+  --color-sage-500: #4faa8b;
+  --color-sage-600: #2f8a6d;
+
+  --color-clay-300: #f0c9a8;
+  --color-clay-500: #d99560;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-ink-50);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-sage-400);
+  color: var(--color-ink-950);
+}
+
+/* Thin, unobtrusive scrollbar that matches the palette */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-ink-300) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
